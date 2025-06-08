@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Post Extractor</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LinkedIn Post Extractor</h1>
+    <p>Extract post descriptions from LinkedIn feed.</p>
+    
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle-switch" checked>
+        <span class="slider round"></span>
+      </label>
+      <span id="status-text" class="status-enabled">Enabled</span>
+    </div>
+    
+    <div id="results" class="results">
+      <p>Status: Ready to scan</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

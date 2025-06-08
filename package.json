@@ -1,0 +1,8 @@
+{
+  "name": "factslap-linkedin-ai-detector",
+  "version": "1.0.0",
+  "description": "LinkedIn AI content detector extension",
+  "dependencies": {
+    "groq-sdk": "^0.3.1"
+  }
+}

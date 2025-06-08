@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  color: #0077B5;
+  margin-top: 0;
+}
+
+/* Toggle Switch Styling */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0077B5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0077B5;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Status text styling */
+.status-enabled {
+  color: #0077B5;
+  font-weight: bold;
+}
+
+.status-disabled {
+  color: #888;
+  font-weight: bold;
+}
+
+.results {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f3f6f8;
+  border-radius: 4px;
+  font-size: 14px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Styling for post items */
+.posts-container {
+  margin-top: 10px;
+}
+
+.post-item {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-left: 3px solid #0077B5;
+  background-color: white;
+  position: relative;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.post-item h3 {
+  font-size: 14px;
+  margin: 0;
+  color: #0077B5;
+  flex: 1;
+}
+
+.ai-probability-indicator {
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.ai-assessment {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.post-description {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e1e9ee;
+  margin: 10px 0;
+}
